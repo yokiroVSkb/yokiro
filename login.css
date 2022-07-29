@@ -1,0 +1,141 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    display: flex;
+    background: linear-gradient(to left, rgb(104, 199, 211),  rgb(220, 199, 199));
+}
+.big-box{
+    width: 1050px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    /* background-color: rgb(255, 255, 255); */
+    margin:auto;
+    /* border: 1px solid rebeccapurple; */
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px rgba(0,0,0,.1);
+}
+.qidese-box{
+    position: absolute;
+    width: calc(1050px /2);
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px rgba(0,0,0,.1);
+    background-color: rgb(135, 235, 239);
+    transition: .3s ease-in-out;
+
+}
+.qidese-box h2{
+    margin-top: 60px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1.5px rgba(0,0,0,.3);
+    color: aliceblue;
+}
+.qidese-box p{
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1.5px rgba(0,0,0,.3);
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+
+.qidese-box .img-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px rgba(0,0,0,.1);
+
+}
+.qidese-box .img-box img{
+    width: 100%;
+    
+}
+.login-box,.register-box{
+    flex: 1;
+    height: 100%;
+}
+.login-box,.register-box h1{
+    color: aliceblue;
+}
+.title-box{
+    height: 200px;
+    line-height: 300px;
+    text-align: center;
+
+}
+
+.title-box h1{
+    letter-spacing: 5px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.input-box input{
+    width: 60%;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    text-indent: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+.input-box input:focus::placeholder{
+    opacity: 0;
+    
+}
+.input-box .btn-box{
+    
+    display: flex;
+    align-content: center;
+    
+}
+.input-box .btn-box button{
+    border: none;
+    background-color: rgb(63, 209, 231);
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    color: white;
+    padding: 0 0 0 5px;
+    
+}
+.input-box .btn-box  p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: aliceblue;
+    opacity: .5;
+}
+.input-box .btn-box  p:hover{
+    opacity: 1;
+    text-shadow: 4px 4px 3px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.btn-box button:hover{
+    opacity: .5;
+    cursor: pointer;
+
+}
